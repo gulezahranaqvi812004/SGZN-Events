@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>First page</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo9.avif" alt="logo">
+        </div>
+        <div class="main">
+            <nav>
+                <ul>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="" class="">Services</a> </li>
+                    <li><a href="#">Gallery </a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="title">
+        <h1>SGZN Events</h1>
+    </div>
+    <div class="button">
+        <a href="" class="hero-btn">Watch video</a>
+        <a href="#" class="btn">Explore more</a>
+    </div>
+    <section class="Services">
+        
+        <h1>Our Services</h1>
+        <div class="row">
+            <div class="full-planning">
+                <h2>FULL PLANNING:</h2>
+                <p> Our full-planning service handles the entire scope of your event, including all design, production
+                    management, and logistics. From the minute details to the major decisions, our team of experienced
+                    planners will ensure your event goes according to plan with full and transparent communication. From
+                    the very first meeting, we’ll turn your ideas into a vision board to develop a creative concept
+                    you’ll love, and take over the budgeting and payment tracking. Our comprehensive planning includes
+                    vendor sourcing, venue scouting, and coordination. Take full advantage of our knowledge of local
+                    vendors to source the best photographer, florist, tent rental, and DJ to match your vision.</p>
+            </div>
+            <div class="partial-planning">
+                <h2>PARTIAL PLANNING</h2>
+                <p> The month-of coordination is ideal for those who are nearly finished with the planning but need the
+                    coordinating skills of a professional to make sure everything runs smoothly. Upon our complimentary
+                    meeting at the month-of appointment, our team will liaise with your vendors to gather details for
+                    building a structured timeline for the last few weeks before and the day of your event. Partial
+                    planning includes essential coordination for a successful event, including day-of scheduling,
+                    rehearsal and styling direction, coordination of event set up and breakdown, and more.</p>
+
+            </div>
+            <div class="design-and-decor">
+                <h2>EVENT DESIGN & DECOR</h2>
+                <p>Our Event Design & Décor package is the aesthetic essence of your event, giving it its own sensory
+                    appeal. STORI Events will design your event to match your vision, budget, and personality. Upon our
+                    initial meeting, we turn your ideas into a full concept while considering your budgetary needs. From
+                    there, we’ll design a completely customized event that uniquely blends your vision with the venue’s
+                    unique configuration and architecture. Our team designs and coordinates the finer aesthetic details,
+                    like florals, stationary, lighting, and rentals, while handling the more essential design logistics,
+                    such vendor communication and décor set-up and style. </p>
+
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
+
+
+----------------------------------------------------------------
+
+
+
+
+
+CSS
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman';
+}
+
+header {
+    background-image:linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)), url(photo2.avif);
+   
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+
+}
+
+ul li a:hover {
+    background-color: wheat;
+    color: black;
+}
+
+ul li.active a {
+    background-color: wheat;
+    color: black;
+    border: 1px solid transparent;
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    margin: auto ;
+}
+
+.logo img {
+    float: left;
+    width: 150px;
+    height: auto;
+   margin:30px;
+}
+
+.main { 
+    max-width: 1200px;
+    margin: auto;
+}
+.title h1{
+    color:white;
+    font-family:Calibri;
+    font-size: 69px;
+}
+.button{
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    margin: auto ;
+}
+.btn{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color:white;
+    text-decoration: none;
+}
+.hero-btn
+{  border: 1px solid #fff;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border:;
+}
+.btn:hover{
+    background-color: wheat;
+    color: black;
+}
+.hero-btn:hover{
+    background-color: wheat;
+    color: black;
+}
+.nav-links ul li::after{
+    content: ' ';
+    width: 0%;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+/* service */
+.Services{
+    background-image:linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)), url(photo2.avif);
+  width:80%;
+  margin:auto;
+  text-align: center;
+  padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600 ;
+    color:rgb(9, 9, 29);
+}
+h2{
+    text-align: left;
+    font-family: 'Gill Sans';
+    color:rgb(41, 41, 168);
+}
+p{
+    font-family: 'Times New Roman';
+    text-align: justify;
+  font-size: 22px;
+  color:white;
+}
+
+
+
+
+-------------------------------------------9 march----------------------------
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styleNav.css">
+    <title>First page</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo9.avif" alt="logo">
+        </div>
+        <div class="main">
+            <nav>
+                <ul>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="" class="">Services</a> </li>
+                    <li><a href="#">Gallery </a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="title">
+        <h1>SGZN Events</h1>
+    </div>
+    <div class="button">
+        <a href="" class="hero-btn">Watch video</a>
+        <a href="#" class="btn">Explore more</a>
+    </div>
+    <section class="Services">
+
+        <h1>Our Services</h1>
+        <div class="row">
+
+            <div class="Services-col">
+                <h3>FULL PLANNING:</h3>
+                <p> Our full-planning service handles the entire scope of your event, including all design, production
+                    and
+                    management.Take full advantage of our knowledge of our services make your event full of memories.
+                </p>
+            </div>
+            <div class="Services-col">
+                <h3>PARTIAL PLANNING</h3>
+                <p> Partial
+                    planning includes essential coordination for a successful event, including day-of scheduling,
+                    rehearsal and styling direction, coordination of event set up and breakdown, and more.</p>
+
+            </div>
+            <div class="Services-col">
+                <h3>DESIGN & DECOR</h3>
+                <p>Our Event Design & Décor package is the aesthetic essence of your event, giving it its own sensory
+                    appeal.Events will design your event to match your vision.From
+                    there, we’ll design a completely customized event. </p>
+
+            </div>
+        </div>
+
+    </section>
+    <section class="packageColoumn">
+        <h1>
+            Our Packages
+        </h1>
+        <!-- <p>
+            Our packages facilitate all types of customers.We will cherish all events by our experties!
+        </p> -->
+        <div class="packageColoumn1">
+            <img src="corporateEvent.jpg" alt="picture">
+            <h2>
+                CORPORATE EVENTS
+            </h2>
+            <!-- <div class="corporateImages"> -->
+
+            <!-- <img src="corporateEvent2.jpg" alt="picture"> -->
+            <!-- <img src="corporateEvent3.jpg" alt="picture">
+                <img src="corporateEvent4.jpg" alt="picture"> -->
+            <!-- </div> -->
+
+            <p>
+                Since 2006,SGZN is elevating standards of event planning in corporate and private sectors of Pakistan
+                and working with famous multinational and national brands.<br>
+            <ol class="corporateEventPackageDetails">
+                <li>Premium Package: Rs 4,000\- to Rs.6,000\-</li>
+                <li> Meeting Package: Rs 3,000\- to Rs.5,000\-</li>
+                <li>Exclusive Package: Rs 5,000\- to Rs.9,000\-</li>
+            </ol>
+
+            </p>
+        </div>
+        <div class="packageColoumn2">
+            <img src="wedding.avif" alt="picture">
+            <h2>
+                WEDDING PLANNING
+
+            </h2>
+            <p>
+                Wedding is not a day its an emotion for those who play any role in this event and our wedding planners
+                know how to make these emotions memorable.
+            </p>
+            <ol class="weddingEventPackageDetails">
+                <li>Premium Package: Rs 4,000\- to Rs.6,000\-</li>
+                <li> Meeting Package: Rs 3,000\- to Rs.5,000\-</li>
+                <li>Exclusive Package: Rs 5,000\- to Rs.9,000\-</li>
+            </ol>
+        </div>
+        <div class="packageColoumn3">
+            <img src="bday4.jpg" alt="picture">
+            <h2>
+                BIRTHDAY PARTIES
+
+            </h2>
+
+            <p>
+                We celebrate birthdays to remember, acknowledge, and appreciate the life of a person who has been born.
+                Birthdays are about celebrating the life of someone.
+            </p>
+            <ol class="birthdayPackageDetails">
+                <li>Premium Package: Rs 4,000\- to Rs.6,000\-</li>
+                <li> Meeting Package: Rs 3,000\- to Rs.5,000\-</li>
+                <li>Exclusive Package: Rs 5,000\- to Rs.9,000\-
+<br><br><br><br><br>
+                </li>
+            </ol>
+        </div>
+    </section>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+---------------css
+* {
+    margin: auto;
+    padding: 0;
+    font-family: 'Times New Roman';
+}
+
+header {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(photo2.avif);
+
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+
+}
+
+ul li a:hover {
+    background-color: wheat;
+    color: black;
+}
+
+ul li.active a {
+    background-color: wheat;
+    color: black;
+    border: 1px solid transparent;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}
+
+.logo img {
+    float: left;
+    width: 150px;
+    height: auto;
+    margin: 30px;
+}
+
+.main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title h1 {
+    color: white;
+    font-family: Calibri;
+    font-size: 69px;
+}
+
+.button {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}
+
+.btn {
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.hero-btn {
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.btn:hover {
+    background-color: wheat;
+    color: black;
+}
+
+.hero-btn:hover {
+    background-color: wheat;
+    color: black;
+}
+
+.nav-links ul li::after {
+    content: ' ';
+    width: 0%;
+    background: #fff;
+    display: block;
+    margin: auto;
+    margin-bottom: 0%;
+    transition: 0.5;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+/* service */
+.Services {
+    /* background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(photo2.avif);
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px; */
+    /* background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(photo2.avif); */
+    /* background-color: rgb(100, 83, 61); */
+    background-image: url(servicesWallpaper.jpg);
+    margin-top: auto;
+    padding-top: auto;
+
+    background-size: cover;
+    background-position: center;
+
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(0, 0, 7);
+    margin-top: 5%;
+
+}
+
+h3 {
+
+    text-align: center;
+    font-family: 'Gill Sans';
+    font-weight: 600;
+    color: rgb(3, 3, 19);
+}
+
+p {
+    font-family: 'Times New Roman';
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    line-height: 22px;
+    padding: 10px;
+
+
+}
+
+.row {
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.Services-col {
+    flex-basis: 31%;
+    background: palegoldenrod;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.Services-col:hover {
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+/* ------packages */
+.packageColoumn {
+    /* background-image: url(packagesWallpaper.jpg); */
+    /* background-color: rgb(212, 185, 152); */
+    /* display: flex; */
+    background-color: rgb(13, 4, 18);
+    background-position: absolute;
+    background-size: cover;
+    height: 88%;
+    align-items: center;
+    flex-basis: 50%;
+}
+
+.packageColoumn h1 {
+    margin-top: 0px;
+    color:rgb(223, 244, 244);
+    font-size: 40px;
+    font-weight: 600;
+    align-items: center;
+}
+
+
+
+.packageColoumn1 h2 {
+    
+    color:rgb(223, 244, 244);
+    font-size: 36px;
+    font-weight: 200;
+    align-items: left;
+    margin: 10px 15px;
+    font-family: Haettenschweiler;
+}
+
+.packageColoumn1 img {
+    /* flex-basis: 31%;
+
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: content-box;
+    transition: 0.5s;
+    padding-top: 50px;
+    float: right;
+    height: 220px;
+    width: 420px;
+    margin-right: 250px;
+    display: flex;
+    margin-top: 0%; */
+     transition: 0.5s;
+    /* padding-top: 50px; */
+    float: right;
+    height: 220px;
+    width: 420px;
+    margin-right: 250px;
+    /* display: flex; */
+    margin-top: 20px;
+    margin-bottom: 0px;
+
+}
+
+.packageColoumn1 img:hover {
+    box-shadow: 0 0 20px 20px rgb(220, 206, 206);
+}
+
+.packageColoumn1 p {
+    margin: 0px 15px;
+    text-align: left;
+    font-size: 22px;
+    color:  rgb(220, 206, 206);
+ 
+}
+
+.corporateEventPackageDetails {
+    color:  rgb(220, 206, 206);
+
+    margin-top: 0px;
+    padding: 15px 25px;
+    margin: 0px 15px;
+    margin-bottom: 50px;
+    font-size: 22px;
+    text-align: left;
+    font-weight: 400;
+}
+
+.packageColoumn2 h2 {
+    /* color: rgb(141, 36, 36);
+    font-size: 36px;
+    font-weight: 200;
+    align-items: left;
+    margin: 10px 15px; */
+    color:rgb(223, 244, 244);
+    font-size: 36px;
+    font-weight: 200;
+    align-items: left;
+    margin: 10px 15px;
+    font-family: Haettenschweiler;
+}
+
+.packageColoumn2 img {
+    /* flex-basis: 31%;
+
+    border-radius: 10px;
+    margin-bottom: 5%; */
+    /* padding: 20px 12px; */
+    /* box-sizing: content-box; */
+    transition: 0.5s;
+    /* padding-top: 50px; */
+    float: right;
+    height: 220px;
+    width: 420px;
+    margin-right: 250px;
+    /* display: flex; */
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.packageColoumn2 img:hover {
+    box-shadow: 0 0 20px 20px rgb(220, 206, 206);
+}
+.weddingEventPackageDetails {
+    color:  rgb(220, 206, 206);
+
+    margin-top: 0px;
+    padding: 15px 25px;
+    margin: 0px 15px;
+    margin-bottom: 50px;
+    font-size: 22px;
+    text-align: left;
+    font-weight: 400;
+}
+
+
+.packageColoumn2 p {
+    /* width: 200px;
+    height: 230px;
+
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    margin-bottom: 50px; */
+    margin: 0px 15px;
+    text-align: left;
+    font-size: 22px;
+   color:  rgb(220, 206, 206);
+}
+
+.packageColoumn3 h2 {
+    /* color: rgb(141, 36, 36);
+    font-size: 36px;
+    font-weight: 200;
+    align-items: left;
+    margin: 10px 15px; */
+    color:rgb(223, 244, 244);
+    font-size: 36px;
+    font-weight: 200;
+    align-items: left;
+    margin: 10px 15px;
+    font-family: Haettenschweiler;
+}
+.packageColoumn3 img:hover {
+    box-shadow: 0 0 20px 20px rgb(220, 206, 206);
+}
+.birthdayPackageDetails {
+    color: rgb(220, 206, 206);
+
+    margin-top: 0px;
+    padding: 15px 25px;
+    margin: 0px 15px;
+    margin-bottom: 50px;
+    font-size: 22px;
+    text-align: left;
+    font-weight: 400;
+}
+.packageColoumn3 img {
+    /* flex-basis: 31%;
+
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: content-box;
+    transition: 0.5s;
+    padding-top: 50px;
+    float: right;
+    height: 220px;
+    width: 420px;
+    margin-right: 250px;
+    display: flex;
+    margin-top: 0%; */
+    transition: 0.5s;
+    /* padding-top: 50px; */
+    float: right;
+    height: 220px;
+    width: 420px;
+    margin-right: 250px;
+    /* display: flex; */
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.packageColoumn3 p {
+    /* width: 200px;
+    height: 230px;
+
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    margin-bottom: 50px; */
+    margin: 0px 15px;
+    text-align: left;
+    font-size: 22px;
+    color:  rgb(220, 206, 206);
+
+}
